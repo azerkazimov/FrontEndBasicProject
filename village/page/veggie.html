@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/veggie.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Terevez</title>
+</head>
+
+<body>
+    <div class="header" id="head">
+        <header class="topheader">
+            <div class="topheader__inner">
+                <div class="topheader__logo">
+                    <a href="../index.html">
+                        <img src="../img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="topheader__search-panel">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Axtar...">
+                    <button>Axtar</button>
+                </div>
+                <div class="topheader__hot-line">
+                    <div class="hot-line_icon">
+                        <i class="fas fa-headphones-alt"></i>
+                    </div>
+
+                    <div class="topheader__hot-line-number">
+                        <div class="hot-line_grey">
+                            <p>Qaynar xet:</p>
+                        </div>
+                        <p id="oversize">(099) 999 99 99</p>
+                    </div>
+
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <div class="nav-menu-panel">
+                    <ul class="nav-menu-list">
+                        <li class="nav-menu-item"><a href="../index.html">Əsas səhifə</a></li>
+                        <li class="nav-menu-item"><a href="#product">Məhsullar</a></li>
+                        <li class="nav-menu-item"><a href="#blog">Blog</a></li>
+                        <li class="nav-menu-item"><a href="#">Əlaqə</a></li>
+                        <li class="nav-menu-item"><a href="#about">Haqqimizda</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+
+    <div class="main-page">
+        <div class="filters">
+
+        </div>
+        <div class="categories">
+            <div class="categories__inner">
+                <div class="category__box">
+                    <img src="../img/veggies/potato.jpg" alt="">
+                    <div class="box__description">
+                        <h4>Kartof</h4>
+                        <p>0.70 AZN</p>
+                    </div>
+                    <div class="order-button">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Sifariş et
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Məhsulun migdarı</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <select name="kq" id="kq">
+                                            <option value="">1 kq</option>
+                                            <option value="">2 kq</option>
+                                            <option value="">3 kq</option>
+                                            <option value="">4 kq</option>
+                                            <option value="">5 kq</option>
+                                            <option value="">6 kq</option>
+                                            <option value="">7 kq</option>
+                                        </select>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Bağla</button>
+                                        <button type="button" class="btn btn-primary">Səbətə at</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category__box">
+                    <img src="../img/veggies/tomato.jpg" alt="">
+                    <div class="box__description">
+                        <h4>Pomidor</h4>
+                        <p>1.70 AZN</p>
+                    </div>
+                    <div class="order-button">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Sifariş et
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Məhsulun migdarı</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <select name="kq" id="kq">
+                                            <option value="">1 kq</option>
+                                            <option value="">2 kq</option>
+                                            <option value="">3 kq</option>
+                                            <option value="">4 kq</option>
+                                            <option value="">5 kq</option>
+                                            <option value="">6 kq</option>
+                                            <option value="">7 kq</option>
+                                        </select>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Bağla</button>
+                                        <button type="button" class="btn btn-primary">Səbətə at</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category__box">
+                    <img src="../img/veggies/cucumber.jpg" alt="">
+                    <div class="box__description">
+                        <h4>Xiyar</h4>
+                        <p>2.30 AZN</p>
+                    </div>
+                    <div class="order-button">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Sifariş et
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Məhsulun migdarı</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <select name="kq" id="kq">
+                                            <option value="">1 kq</option>
+                                            <option value="">2 kq</option>
+                                            <option value="">3 kq</option>
+                                            <option value="">4 kq</option>
+                                            <option value="">5 kq</option>
+                                            <option value="">6 kq</option>
+                                            <option value="">7 kq</option>
+                                        </select>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Bağla</button>
+                                        <button type="button" class="btn btn-primary">Səbətə at</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category__box">
+                    <img src="../img/veggies/carrot.jpg" alt="">
+                    <div class="box__description">
+                        <h4>Kök</h4>
+                        <p>0.90 AZN</p>
+                    </div>
+                    <div class="order-button">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Sifariş et
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Məhsulun migdarı</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <select name="kq" id="kq">
+                                            <option value="">1 kq</option>
+                                            <option value="">2 kq</option>
+                                            <option value="">3 kq</option>
+                                            <option value="">4 kq</option>
+                                            <option value="">5 kq</option>
+                                            <option value="">6 kq</option>
+                                            <option value="">7 kq</option>
+                                        </select>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Bağla</button>
+                                        <button type="button" class="btn btn-primary">Səbətə at</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category__box">
+                    <img src="../img/veggies/pepper.jpg" alt="">
+                    <div class="box__description">
+                        <h4>Bibər</h4>
+                        <p>3.20 AZN</p>
+                    </div>
+                    <div class="order-button">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Sifariş et
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Məhsulun migdarı</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <select name="kq" id="kq">
+                                            <option value="">1 kq</option>
+                                            <option value="">2 kq</option>
+                                            <option value="">3 kq</option>
+                                            <option value="">4 kq</option>
+                                            <option value="">5 kq</option>
+                                            <option value="">6 kq</option>
+                                            <option value="">7 kq</option>
+                                        </select>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Bağla</button>
+                                        <button type="button" class="btn btn-primary">Səbətə at</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="category__box">
+                    <img src="../img/veggies/eggplant.jpg" alt="">
+                    <div class="box__description">
+                        <h4>Badımcan</h4>
+                        <p>1.60 AZN</p>
+                    </div>
+                    <div class="order-button">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Sifariş et
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Məhsulun migdarı</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <select name="kq" id="kq">
+                                            <option value="">1 kq</option>
+                                            <option value="">2 kq</option>
+                                            <option value="">3 kq</option>
+                                            <option value="">4 kq</option>
+                                            <option value="">5 kq</option>
+                                            <option value="">6 kq</option>
+                                            <option value="">7 kq</option>
+                                        </select>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Bağla</button>
+                                        <button type="button" class="btn btn-primary">Səbətə at</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category__box">
+
+                    <img src="../img/veggies/broccoli.jpg" alt="">
+                    <div class="box__description">
+                        <h4>Brokkoli</h4>
+                        <p>1.00 AZN</p>
+                    </div>
+                    <div class="order-button">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Sifariş et
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Məhsulun migdarı</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <select name="kq" id="kq">
+                                            <option value="">1 kq</option>
+                                            <option value="">2 kq</option>
+                                            <option value="">3 kq</option>
+                                            <option value="">4 kq</option>
+                                            <option value="">5 kq</option>
+                                            <option value="">6 kq</option>
+                                            <option value="">7 kq</option>
+                                        </select>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Bağla</button>
+                                        <button type="button" class="btn btn-primary">Səbətə at</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <footer>
+        <p>Designed by <a href="#"><span id="yellow">Azer Kazimov</span></a> © 2021</p>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app/slick.min.js"></script>
+    <script src="../app/script.js"></script>
+</body>
+
+</html>

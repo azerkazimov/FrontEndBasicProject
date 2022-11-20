@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Təbii kənd məhsullari</title>
+</head>
+
+<body>
+
+    <!-- ------------------ Header ------------------------- -->
+
+    <div class="header" id="head">
+        <header class="topheader">
+            <div class="topheader__inner">
+                <div class="topheader__logo">
+                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                </div>
+                <div class="topheader__search-panel">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Axtar...">
+                    <button>Axtar</button>
+                </div>
+                <div class="topheader__hot-line">
+                    <div class="hot-line_icon">
+                        <i class="fas fa-headphones-alt"></i>
+                    </div>
+
+                    <div class="topheader__hot-line-number">
+                        <div class="hot-line_grey">
+                            <p>Qaynar xet:</p>
+                        </div>
+                        <p id="oversize">(099) 999 99 99</p>
+                    </div>
+
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <div class="nav-menu-panel">
+                    <ul class="nav-menu-list">
+                        <li class="nav-menu-item"><a href="#head">Əsas səhifə</a></li>
+                        <li class="nav-menu-item"><a href="#product">Məhsullar</a></li>
+                        <li class="nav-menu-item"><a href="#blog">Blog</a></li>
+                        <li class="nav-menu-item"><a href="#about">Əlaqə</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!-- -------------------------------------------------------------------- -->
+
+
+    <!-- --------------------------- Carousel ------------------------------- -->
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="img/carousel/3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption ">
+                    <div class="overlay">
+                        <div class="dark">
+                            <div class="order-section">
+
+                                <div class="meat_order transform_box">
+                                    <div class="transform_box__inner">
+                                        <!-- Front -->
+                                        <div class="front_side">
+                                            <img src="../village/img/butcher.jpg" alt="">
+                                            <div class="section_description">
+                                                <h2> Təzə <span id="green">ƏT</span></h2>
+                                            </div>
+
+                                        </div>
+                                        <!-- Back -->
+                                        <div class="back_side">
+                                            <div class="back_side_content">
+                                                <div class="meat__cut">
+                                                    <img src="../village/img/beef-cut.png" alt="">
+                                                </div>
+
+                                                <div class="confirm">
+                                                    <a href="./page/meat.html" target="blank"><button> Sifarişi
+                                                            tamamla</button></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div data-aos="fade-left">
+                                    <div class="product_order-section">
+                                        <div class="order-items">
+                                            <a href="./page/veggie.html" target="blank">
+                                                <img src="../village/img/3.jpg" alt="">
+
+                                                <div class="veggie product-description">
+                                                    <h4>Tərəvəz</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="order-items">
+                                            <a href="./page/milk.html" target="blank">
+
+                                                <img src="../village/img/5.jpg" alt="">
+                                                <div class="milk product-description">
+                                                    <h4>Süd</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="order-items">
+                                         <a href="./page/honey.html" target="blank">
+                                                <img src="../village/img/6.jpg" alt="">
+                                                <div class="honey product-description">
+                                                    <h4>Bal</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item data-bs-interval=" 2000">
+                <img src="img/carousel/2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption carousel_two d-none d-md-block">
+                    <div class="delivery-section">
+                        <div class="delivery-item">
+                            <img src="../village/img/delivery.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel/1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- -------------------------------------------------------------------- -->
+
+
+    <!-- ------------------------- Product ---------------------------------- -->
+
+    <div data-aos="fade-up-left">
+        <div class="products">
+            <div id="product" class="products__section">
+                <div class="title">
+                    <h2>Məhsullar</h2>
+                </div>
+
+
+                <!-- Slider -->
+
+                <div class="slider">
+                    <div class="slider__item">
+                        <a href="#" target="blank">
+                            <img src="../village/img/slider/01.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="slider__item">
+                        <a href="#" target="blank">
+                            <img src="../village/img/slider/02.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="slider__item">
+                        <a href="#" target="blank">
+                            <img src="../village/img/slider/03.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="slider__item">
+                        <a href="#" target="blank">
+                            <img src="../village/img/slider/04.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="slider__item">
+                        <a href="#" target="blank">
+                            <img src="../village/img/slider/05.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="slider__item">
+                        <a href="#" target="blank">
+                            <img src="../village/img/slider/06.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="slider__item">
+                        <a href="#" target="blank">
+                            <img src="../village/img/slider/07.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="slider__item">
+                        <a href="#" target="blank">
+                            <img src="../village/img/slider/08.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ------ -->
+
+                <!-- List -->
+
+                <div data-aos="fade-up-right">
+                    <div class="products__list">
+                        <div class="products__item">
+
+                            <div class="products__box">
+                                <a href="#">
+                                    <div class="product-image">
+                                        <img src="img/products/potato.jpg" alt="">
+                                    </div>
+                                </a>
+                                <div class="products-description">
+                                    <h4>Kartof</h4>
+                                    <p>Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="products__box">
+                                <div class="product-image">
+                                    <img src="img/products/onion.jpg" alt="">
+                                </div>
+                                <div class="products-description">
+                                    <h4>Soğan</h4>
+                                    <p>Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry.</p>
+                                </div>
+                            </div>
+
+                            <div class="products__box">
+                                <div class="product-image">
+                                    <img src="img/products/carrot.jpg" alt="">
+                                </div>
+                                <div class="products-description">
+                                    <h4>Kök</h4>
+                                    <p>Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry.</p>
+                                </div>
+                            </div>
+
+                            <div class="products__box">
+                                <div class="product-image">
+                                    <img src="img/products/cucumbers.jpg" alt="">
+                                </div>
+                                <div class="products-description">
+                                    <h4>Xiyar</h4>
+                                    <p>Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry.</p>
+                                </div>
+                            </div>
+
+                            <div class="products__box">
+                                <div class="product-image">
+                                    <img src="img/products/tomato.jpg" alt="">
+                                </div>
+                                <div class="products-description">
+                                    <h4>Pomidor</h4>
+                                    <p>Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry.</p>
+                                </div>
+                            </div>
+
+                            <div class="products__box">
+                                <div class="product-image">
+                                    <img src="img/products/orange.jpg" alt="">
+                                </div>
+                                <div class="products-description">
+                                    <h4>Portağal</h4>
+                                    <p>Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry.</p>
+                                </div>
+                            </div>
+
+                            <div class="products__box">
+                                <div class="product-image">
+                                    <img src="img/products/mandarin.jpg" alt="">
+                                </div>
+                                <div class="products-description">
+                                    <h4>Mandarin</h4>
+                                    <p>Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry.</p>
+                                </div>
+                            </div>
+
+                            <div class="products__box">
+                                <div class="product-image">
+                                    <img src="img/products/quince.jpg" alt="">
+                                </div>
+                                <div class="products-description">
+                                    <h4>Heyva</h4>
+                                    <p>Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry.</p>
+                                </div>
+                            </div>
+
+                            <div class="products__box">
+                                <div class="product-image">
+                                    <img src="img/products/blackberry-jam.jpg" alt="">
+                                </div>
+                                <div class="products-description">
+                                    <h4>Böyürtkən mürəbbəsi</h4>
+                                    <p>Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry.</p>
+                                </div>
+                            </div>
+
+                            <div class="products__box">
+                                <div class="product-image">
+                                    <img src="img/products/stawberry-jam.jpg" alt="">
+                                </div>
+                                <div class="products-description">
+                                    <h4>Çiyələk mürəbbəsi</h4>
+                                    <p>Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry.</p>
+                                </div>
+                            </div>
+
+                            <div class="products__box">
+                                <div class="product-image">
+                                    <img src="img/products/apple.jpg" alt="">
+                                </div>
+                                <div class="products-description">
+                                    <h4>Alma</h4>
+                                    <p>Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry.</p>
+                                </div>
+                            </div>
+
+                            <div class="products__box">
+                                <div class="product-image">
+                                    <img src="img/products/feyxoa.jpg" alt="">
+                                </div>
+                                <div class="products-description">
+                                    <h4>Feyxoa</h4>
+                                    <p>Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry.</p>
+                                </div>
+                            </div>
+
+                            <div class="products__box">
+                                <div class="product-image">
+                                    <img src="img/products/honey.jpg" alt="">
+                                </div>
+                                <div class="products-description">
+                                    <h4>Bal</h4>
+                                    <p>Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry.</p>
+                                </div>
+                            </div>
+
+                            <div class="products__box">
+                                <div class="product-image">
+                                    <img src="img/products/white-cheese.jpg" alt="">
+                                </div>
+                                <div class="products-description">
+                                    <h4>Pendir</h4>
+                                    <p>Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry.</p>
+                                </div>
+                            </div>
+
+                            <div class="products__box">
+                                <div class="product-image">
+                                    <img src="img/products/cheese.jpg" alt="">
+                                </div>
+                                <div class="products-description">
+                                    <h4>Holland pendiri</h4>
+                                    <p>Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------- -->
+
+    <!-- ---------------------------- Blog ---------------------------------- -->
+
+    <div data-aos="fade-up">
+        <div id="blog" class="blog">
+            <div class="title">
+                <h2>Bizdən sizə</h2>
+            </div>
+            <div class="blog__content">
+                <div class="blog__content-item">
+                    <div class="blog__box-wrapper">
+                        <div class="blog__box">
+                            <img src="..//village/img/chiken.jpg" alt="">
+                            <div class="blog__box-description">
+                                <h3>Horuz bannamamış</h3>
+                            </div>
+                            <button><a href="#">İndi al</a></button>
+                        </div>
+                    </div>
+                    <div class="blog__box-wrapper">
+                        <div class="blog__box">
+                            <img src="..//village/img/fish.jpg" alt="">
+                            <div class="blog__box-description">
+                                <h3>Səhər sudan çixmiş baliqlar</h3>
+                            </div>
+                            <button><a href="#">İndi al</a> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------- -->
+
+    <!-- --------------------------------- About ---------------------------- -->
+
+    <div id="about" class="contact__section">
+        <div class="title">
+            <h2>Haqqimizda</h2>
+        </div>
+
+
+        <div class="contact__item-adress">
+            <div class="contact_inner-box">
+                <h4>Ünvan</h4>
+                <p>Baki / Azərbaycan</p>
+                <p>Afiyəttin Cəlilov 12/b</p>
+
+            </div>
+            <div class="contact_inner-box">
+                <h4>Əlaqə</h4>
+                <p>(+994)99 999 99 99</p>
+            </div>
+            <div class="contact_inner-box">
+                <h4>Ətraflı məllumat</h4>
+                <p>Hər hansi sualınız yaransa, qaynar hətt və ya info@gmail.com ünvanınız ilə əlaqə saxlayın </p>
+            </div>
+        </div>
+
+        <div class="contact__item-message">
+
+        </div>
+    </div>
+
+
+    <!-- -------------------------------------------------------------------- -->
+
+    <div class="arrowup">
+        <a href="#">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+
+    <!-- -------------------------------------------------------------------- -->
+
+    <footer>
+        <p>Designed by <a href="https://www.linkedin.com/in/azer-kazimov-8b06bb12a/" target="blank"><span id="yellow">Azer Kazimov</span></a> © 2021</p>
+    </footer>
+
+    <!-- -------------------------------------------------------------------- -->
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app/slick.min.js"></script>
+    <script src="app/script.js"></script>
+</body>
+
+</html>
